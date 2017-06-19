@@ -100,7 +100,7 @@ CONFIG.data.training.levels.beginner        = {
         {
                 'name': 'Level 1',
                'image': { 'src': relurljoin(CONFIG.urls.images, 'training',
-                    'thumbnails', '1.jpg') },
+                    'thumbnails', 'beginner', '1.jpg') },
             'duration': 30,    # minutes
             'sessions': 4,     # monthly
            'equipment': ['gym'],
@@ -109,7 +109,7 @@ CONFIG.data.training.levels.beginner        = {
         {
                 'name': 'Level 2',
                'image': { 'src': relurljoin(CONFIG.urls.images, 'training',
-                    'thumbnails', '2.jpg') },
+                    'thumbnails', 'beginner', '2.jpg') },
             'duration': 30,
             'sessions': 8,
            'equipment': ['gym'],
@@ -118,7 +118,7 @@ CONFIG.data.training.levels.beginner        = {
         {
                 'name': 'Level 3',
                'image': { 'src': relurljoin(CONFIG.urls.images, 'training',
-                    'thumbnails', '3.jpg') },
+                    'thumbnails', 'beginner', '3.jpg') },
             'duration': 30,
             'sessions': 12,
            'equipment': ['gym'],
@@ -134,7 +134,7 @@ CONFIG.data.training.levels.intermediate       = {
         {
                 'name': 'Level 1',
                'image': { 'src': relurljoin(CONFIG.urls.images, 'training',
-                    'thumbnails', '1.jpg') },
+                    'thumbnails', 'intermediate', '1.jpg') },
             'duration': 45,    # minutes
             'sessions': 4,     # monthly
            'equipment': ['gym'],
@@ -143,7 +143,7 @@ CONFIG.data.training.levels.intermediate       = {
         {
                 'name': 'Level 2',
                'image': { 'src': relurljoin(CONFIG.urls.images, 'training',
-                    'thumbnails', '2.jpg') },
+                    'thumbnails', 'intermediate', '2.jpg') },
             'duration': 45,
             'sessions': 8,
            'equipment': ['gym'],
@@ -152,7 +152,7 @@ CONFIG.data.training.levels.intermediate       = {
             {
                     'name': 'Level 3',
                    'image': { 'src': relurljoin(CONFIG.urls.images, 'training',
-                        'thumbnails', '3.jpg') },
+                        'thumbnails', 'intermediate', '3.jpg') },
                 'duration': 45,
                 'sessions': 12,
                    'price': 720,
@@ -167,7 +167,7 @@ CONFIG.data.training.levels.advance            = {
         {
                 'name': 'Level 1',
                'image': { 'src': relurljoin(CONFIG.urls.images, 'training',
-                    'thumbnails', '1.jpg') },
+                    'thumbnails', 'advance', '1.jpg') },
             'duration': 60,    # minutes
             'sessions': 4,     # monthly
            'equipment': ['gym'],
@@ -176,7 +176,7 @@ CONFIG.data.training.levels.advance            = {
         {
                 'name': 'Level 2',
                'image': { 'src': relurljoin(CONFIG.urls.images, 'training',
-                    'thumbnails', '2.jpg') },
+                    'thumbnails', 'advance', '2.jpg') },
             'duration': 60,
             'sessions': 8,
            'equipment': ['gym'],
@@ -185,7 +185,7 @@ CONFIG.data.training.levels.advance            = {
         {
                 'name': 'Level 3',
                'image': { 'src': relurljoin(CONFIG.urls.images, 'training',
-                    'thumbnails', '3.jpg') },
+                    'thumbnails', 'advance', '3.jpg') },
             'duration': 60,
             'sessions': 12,
            'equipment': ['gym'],

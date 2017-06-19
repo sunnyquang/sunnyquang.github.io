@@ -51,19 +51,19 @@ data:
         packages:
         - duration: 60
           equipment: [gym]
-          image: {src: /assets/img/training/thumbnails/1.jpg}
+          image: {src: /assets/img/training/thumbnails/advance/1.jpg}
           name: Level 1
           price: 300
           sessions: 4
         - duration: 60
           equipment: [gym]
-          image: {src: /assets/img/training/thumbnails/2.jpg}
+          image: {src: /assets/img/training/thumbnails/advance/2.jpg}
           name: Level 2
           price: 600
           sessions: 8
         - duration: 60
           equipment: [gym]
-          image: {src: /assets/img/training/thumbnails/3.jpg}
+          image: {src: /assets/img/training/thumbnails/advance/3.jpg}
           name: Level 3
           price: 900
           sessions: 12
@@ -73,19 +73,19 @@ data:
         packages:
         - duration: 30
           equipment: [gym]
-          image: {src: /assets/img/training/thumbnails/1.jpg}
+          image: {src: /assets/img/training/thumbnails/beginner/1.jpg}
           name: Level 1
           price: 180
           sessions: 4
         - duration: 30
           equipment: [gym]
-          image: {src: /assets/img/training/thumbnails/2.jpg}
+          image: {src: /assets/img/training/thumbnails/beginner/2.jpg}
           name: Level 2
           price: 360
           sessions: 8
         - duration: 30
           equipment: [gym]
-          image: {src: /assets/img/training/thumbnails/3.jpg}
+          image: {src: /assets/img/training/thumbnails/beginner/3.jpg}
           name: Level 3
           price: 540
           sessions: 12
@@ -95,18 +95,18 @@ data:
         packages:
         - duration: 45
           equipment: [gym]
-          image: {src: /assets/img/training/thumbnails/1.jpg}
+          image: {src: /assets/img/training/thumbnails/intermediate/1.jpg}
           name: Level 1
           price: 240
           sessions: 4
         - duration: 45
           equipment: [gym]
-          image: {src: /assets/img/training/thumbnails/2.jpg}
+          image: {src: /assets/img/training/thumbnails/intermediate/2.jpg}
           name: Level 2
           price: 480
           sessions: 8
         - duration: 45
-          image: {src: /assets/img/training/thumbnails/3.jpg}
+          image: {src: /assets/img/training/thumbnails/intermediate/3.jpg}
           name: Level 3
           price: 720
           sessions: 12

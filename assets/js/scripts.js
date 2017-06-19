@@ -131,13 +131,13 @@ $(document).ready(function ( ) {
 
   paypal.Button.render({
 
-          env: 'sandbox', // sandbox | production
+          env: 'production', // sandbox | production
 
           // PayPal Client IDs - replace with your own
           // Create a PayPal app: https://developer.paypal.com/developer/applications/create
           client: {
-              sandbox:    'AZDxjDScFpQtjWTOUtWKbyN_bDt4OgqaF4eYXlewfBP4-8aqX3PiV8e1GWU6liB2CUXlkA59kJXE7M6R',
-              production: 'AVM48MplL9ASEftrcb5X9QTlt8iS89AlpiBLdB01f6ed1dnxGxj8ClSWS0n9HtLMkVyMD2vu7bHTEG7d'
+              sandbox:    'AbGlUJBi461jrOa2Wy5X1xtMDYICq480ChcMjdYFJ03NrWATMN6ZxeHQI0RaOlYvwC_IACQaWNfsJfiP',
+              production: 'AXuoflT1MG0pB04GQ_L_USIgvsE8Dfhnk4Q9BkLBDdI-8fUrThjmXwIaxmd3S_Dy2tO_iOJ5luuO6Jld'
           },
 
           // Show the buyer a 'Pay Now' button in the checkout flow

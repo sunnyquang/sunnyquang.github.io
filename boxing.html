@@ -6,7 +6,7 @@ heading: Boxing
 <div class="background-accent">
   <div class="hidden-lg">
     <img class="img-responsive center-block"
-      src="{{ site.urls.images }}/boxing-landscape.png"
+      src="{{ site.urls.images }}/boxing-landscape.jpg"
       style="width: 100%"/>
   </div>
   <div class="container-fluid">
@@ -18,9 +18,40 @@ heading: Boxing
         <div class="panel panel-default no-background no-border no-shadow">
           <div class="panel-body">
 
+            <div class="row">
+              <div class="col-md-6 col-md-offset-3">
+                <div class="text-center wrapper">
+                  <div class="wrapper">
+                    <p>
+                      <span class="font-bold">Duration: 1 Time Training</span>
+                    </p>
+
+                    <button data-price="19.199" class="btn btn-lg btn-accent btn-questionnaire text-uppercase font-bold">
+                      $ 19.99 Pay Now
+                    </button>
+
+                  </div>
+
+                  <hr style="border: 3px #F82830 solid"/>
+
+                  <div class="wrapper">
+                    <p>
+                      <span class="font-bold">Duration: 1 x week for 1 month</span>
+                    </p>
+
+                    <button data-price="79.199" class="btn btn-lg btn-accent btn-questionnaire text-uppercase font-bold">
+                      $ 79.99 Pay Now
+                    </button>
+
+                  </div>
+
+              </div><!-- .col-md-6 -->
+            </div><!-- .row -->
+
           </div><!-- .panel-body -->
         </div><!-- .panel -->
       </div><!-- .col-md-6 -->
     </div><!-- .row -->
   </div><!-- .container -->
 </div><!-- .background-accent -->
+{% include components/modals/questionnaire.html %}

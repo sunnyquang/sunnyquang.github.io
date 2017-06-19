@@ -126,53 +126,57 @@ $(document).ready(function ( ) {
   });
 
   $(".modal-questionnaire").on("shown.bs.modal", function ( ) {
-    paypal.Button.render({
 
-            env: 'sandbox', // sandbox | production
-
-            // PayPal Client IDs - replace with your own
-            // Create a PayPal app: https://developer.paypal.com/developer/applications/create
-            client: {
-                sandbox:    'AZDxjDScFpQtjWTOUtWKbyN_bDt4OgqaF4eYXlewfBP4-8aqX3PiV8e1GWU6liB2CUXlkA59kJXE7M6R',
-                production: 'AVM48MplL9ASEftrcb5X9QTlt8iS89AlpiBLdB01f6ed1dnxGxj8ClSWS0n9HtLMkVyMD2vu7bHTEG7d'
-            },
-
-            // Show the buyer a 'Pay Now' button in the checkout flow
-            commit: true,
-
-            // payment() is called when the button is clicked
-            payment: function(data, actions) {
-
-                // Make a call to the REST api to create the payment
-                return actions.payment.create({
-                    transactions: [
-                        {
-                            amount: { total: price, currency: 'USD' }
-                        }
-                    ]
-                });
-
-                $(".modal-questionnaire").modal("hide");
-            },
-
-            // onAuthorize() is called when the buyer approves the payment
-            onAuthorize: function(data, actions) {
-
-                // Make a call to the REST api to execute the payment
-                return actions.payment.execute().then(function() {
-                    window.alert('Payment Complete!');
-                });
-
-
-                $(".modal-questionnaire").modal("hide");
-            },
-
-            onCancel: function ( ) {
-              $(".modal-questionnaire").modal("hide");
-            }
-
-        }, '#paypal-button-container');
   })
+
+  paypal.Button.render({
+
+          env: 'sandbox', // sandbox | production
+
+          // PayPal Client IDs - replace with your own
+          // Create a PayPal app: https://developer.paypal.com/developer/applications/create
+          client: {
+              sandbox:    'AZDxjDScFpQtjWTOUtWKbyN_bDt4OgqaF4eYXlewfBP4-8aqX3PiV8e1GWU6liB2CUXlkA59kJXE7M6R',
+              production: 'AVM48MplL9ASEftrcb5X9QTlt8iS89AlpiBLdB01f6ed1dnxGxj8ClSWS0n9HtLMkVyMD2vu7bHTEG7d'
+          },
+
+          // Show the buyer a 'Pay Now' button in the checkout flow
+          commit: true,
+
+          // payment() is called when the button is clicked
+          payment: function(data, actions) {
+
+              // Make a call to the REST api to create the payment
+              var action =  actions.payment.create({
+                  transactions: [
+                      {
+                          amount: { total: price, currency: 'USD' }
+                      }
+                  ]
+              });
+
+              $(".modal-questionnaire").modal("hide");
+
+              return action
+          },
+
+          // onAuthorize() is called when the buyer approves the payment
+          onAuthorize: function(data, actions) {
+
+              // Make a call to the REST api to execute the payment
+               actions.payment.execute().then(function() {
+                  window.alert('Payment Complete!');
+
+
+                  $(".modal-questionnaire").modal("hide");
+              });
+          },
+
+          onCancel: function ( ) {
+            $(".modal-questionnaire").modal("hide");
+          }
+
+      }, '#paypal-button-container');
 });
 
 $(window).load(function(){

@@ -1,0 +1,125 @@
+author: {email: syiree.official@gmail.com}
+baseurl: /
+brand:
+  description: ''
+  email: sunnydelight8282@gmail.com
+  mailchimp: {APIKey: 4ef6b1c6f1b1115a59cb247029d9e574-us16, APIVersion: '3.0', dc: us16,
+    listID: '2685434741'}
+  name: Sunny Quang
+  phone: '+17132568541'
+  social: {facebook: 'https://www.facebook.com/sunny.quang.1', instagram: 'https://instagram.com/sunny_dalight',
+    skype: sunnyquang, twitter: ''}
+color: {primary: '#222222'}
+data:
+  about:
+    paragraphs: ['Sunny is an experienced personal trainer and boxing instructor.
+        His approach focuses on teaching functional exercises for anyone interested
+        in improving mobility, sports performance, and weight loss.', 'Sunny began
+        his personal training as an MMA fighter at the age of 19. He has several MMA
+        fights under his belt and is currently being promoted by Legacy Fighting.
+        In addition to being an accomplished MMA fighter, he has training across a
+        wide spectrum of modalities including weightlifting, kettlebells, and boxing.
+        His passion for training others is motivated by the conviction that we must
+        counteract the inertia that accompanies our modern lifestyle by adopting a
+        holistic mind body approach by utilizing functional exercises to develop mobility,
+        power, and strength.', 'Sunny holds a degree from the National Personal Training
+        Institute. His personal training certifications include NASM certified, Kettlebell
+        certified, Trigger point certified, and as a Box n Burn boxing instructor.
+        Sunny teaches boxing classes on the weekends. All levels are welcomed.']
+  images:
+    carousel:
+    - {src: /assets/img/carousel/1.jpg}
+    - {src: /assets/img/carousel/3.jpg}
+    - {src: /assets/img/carousel/2.jpg}
+    certifications:
+    - {src: /assets/img/certifications/1.png}
+    - {src: /assets/img/certifications/3.png}
+    - {src: /assets/img/certifications/4.png}
+    - {src: /assets/img/certifications/2.png}
+  navbar:
+    links:
+    - {title: Home, url: /}
+    - {title: About Me, url: /about}
+    - {title: Blog, url: 'https://sunnyquang.tumblr.com'}
+    - {title: Boxing, url: /boxing}
+    - {title: Training, url: /training}
+    - {title: Contact, url: /contact.html}
+  training:
+    levels:
+      advance:
+        link: /training/advance.html
+        packages:
+        - duration: 60
+          equipment: [gym]
+          image: {src: /assets/img/training/thumbnails/advance/1.jpg}
+          name: Level 1
+          price: 300
+          sessions: 4
+        - duration: 60
+          equipment: [gym]
+          image: {src: /assets/img/training/thumbnails/advance/2.jpg}
+          name: Level 2
+          price: 600
+          sessions: 8
+        - duration: 60
+          equipment: [gym]
+          image: {src: /assets/img/training/thumbnails/advance/3.jpg}
+          name: Level 3
+          price: 900
+          sessions: 12
+        tagline: Fitness beyond Limits
+      beginner:
+        link: /training/beginner.html
+        packages:
+        - duration: 30
+          equipment: [gym]
+          image: {src: /assets/img/training/thumbnails/beginner/1.jpg}
+          name: Level 1
+          price: 180
+          sessions: 4
+        - duration: 30
+          equipment: [gym]
+          image: {src: /assets/img/training/thumbnails/beginner/2.jpg}
+          name: Level 2
+          price: 360
+          sessions: 8
+        - duration: 30
+          equipment: [gym]
+          image: {src: /assets/img/training/thumbnails/beginner/3.jpg}
+          name: Level 3
+          price: 540
+          sessions: 12
+        tagline: Unlock your Potential
+      intermediate:
+        link: /training/intermediate.html
+        packages:
+        - duration: 45
+          equipment: [gym]
+          image: {src: /assets/img/training/thumbnails/intermediate/1.jpg}
+          name: Level 1
+          price: 240
+          sessions: 4
+        - duration: 45
+          equipment: [gym]
+          image: {src: /assets/img/training/thumbnails/intermediate/2.jpg}
+          name: Level 2
+          price: 480
+          sessions: 8
+        - duration: 45
+          image: {src: /assets/img/training/thumbnails/intermediate/3.jpg}
+          name: Level 3
+          price: 720
+          sessions: 12
+        tagline: Experience the Power of Transformation
+description: ''
+environment: development
+exclude: [Gemfile, Gemfile.lock, package.json, requirements, requirements.txt, build,
+  Makefile, LICENSE, README.md, TODO.md]
+gems: [jekyll-seo-tag]
+lang: en
+path: {assets: /home/achilles/dev/sunnyquang.github.io/assets, images: /home/achilles/dev/sunnyquang.github.io/assets/img,
+  root: /home/achilles/dev/sunnyquang.github.io}
+sass: {style: compressed}
+twitter: {username: ''}
+url: https://sunnyquang.com
+urls: {assets: /assets, data: /assets/data, icons: /assets/img/icons, images: /assets/img}

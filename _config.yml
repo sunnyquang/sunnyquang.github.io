@@ -115,10 +115,10 @@ description: ''
 environment: development
 exclude: [Gemfile, Gemfile.lock, package.json, requirements, requirements.txt, build,
   Makefile, LICENSE, README.md, TODO.md]
+gems: [jekyll-seo-tag]
 lang: en
 path: {assets: /home/achilles/dev/sunnyquang.github.io/assets, images: /home/achilles/dev/sunnyquang.github.io/assets/img,
   root: /home/achilles/dev/sunnyquang.github.io}
-plugins: [jekyll-seo-tag]
 sass: {style: compressed}
 twitter: {username: ''}
 url: https://sunnyquang.com

@@ -51,7 +51,7 @@ CONFIG.urls.assets                          = relurljoin(CONFIG.baseurl,    'ass
 CONFIG.urls.data                            = relurljoin(CONFIG.urls.assets,  'data')
 CONFIG.urls.images                          = relurljoin(CONFIG.urls.assets,   'img')
 CONFIG.urls.icons                           = relurljoin(CONFIG.urls.images, 'icons')
-CONFIG.plugins                              = [
+CONFIG.gems                                 = [
     'jekyll-seo-tag'
 ]
 

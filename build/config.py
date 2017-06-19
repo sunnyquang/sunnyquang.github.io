@@ -64,7 +64,7 @@ CONFIG.color.primary                        = '#222222'
 CONFIG.data.navbar.links                    = [
     { "title": "Home",       "url": CONFIG.baseurl },
     { "title": "About Me",   "url": relurljoin(CONFIG.baseurl, 'about') },
-    { "title": "Blog",       "url": 'http://blog.{url}'.format(url = CONFIG.url) },
+    { "title": "Blog",       "url": "sunnyquang.tumblr.com" },
     { "title": "Boxing",     "url": relurljoin(CONFIG.baseurl, 'boxing') },
     { "title": "Training",   "url": relurljoin(CONFIG.baseurl, 'training') },
     { "title": "Contact",    "url": relurljoin(CONFIG.baseurl, 'contact.html') }

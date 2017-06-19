@@ -40,7 +40,7 @@ data:
     links:
     - {title: Home, url: /}
     - {title: About Me, url: /about}
-    - {title: Blog, url: sunnyquang.tumblr.com}
+    - {title: Blog, url: 'https://sunnyquang.tumblr.com'}
     - {title: Boxing, url: /boxing}
     - {title: Training, url: /training}
     - {title: Contact, url: /contact.html}

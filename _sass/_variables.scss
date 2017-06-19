@@ -1,0 +1,41 @@
+$color-white                        : #FFFFFF;
+
+$color-primary                      : #222222;
+$color-primary-dark                 : #111111;
+$color-primary-darkest              : #000000;
+
+$color-accent                       : #F2F2F2;
+$color-accent-dark                  : darken($color-accent,  5%);
+$color-accent-darker                : darken($color-accent, 10%);
+$color-accent-darkest               : darken($color-accent, 15%);
+
+$color-inverse                      : #F5F5F5;
+$color-inverse-dark                 : #FCFCFC;
+
+$font-family-base                   : "Poppins", sans-serif;
+$font-weight-light                  : 300;
+$font-weight-regular                : 400;
+$font-weight-bold                   : 600;
+$font-weight-heavy                  : 700;
+
+$body-font-family                   : $font-family-base;
+$body-font-weight                   : $font-weight-regular;
+
+$btn-brand-color                    : $color-white;
+$btn-brand-bgcolor                  : $color-primary;
+$btn-brand-border                   : $color-primary-dark;
+$btn-brand-bgcolor-active           : $color-primary-darkest;
+
+$brand-bgcolor                      : $color-primary;
+$brand-bg-color                     : $color-accent;
+$brand-bgcolor-inverse              : #F6EDB4;
+$brand-bgcolor-accent               : $color-accent;
+$brand-bg-accent-color              : $color-primary;
+
+$carousel-card-bgcolor              : #FF0000;
+$carousel-card-color                : $color-white;
+$carousel-card-border-radius        : 0px;
+
+$carousel-card-btn-bgcolor          : transparent;
+$carousel-card-btn-color            : $color-white;
+$carousel-card-btn-border-radius    : 0px;

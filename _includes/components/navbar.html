@@ -1,0 +1,78 @@
+<nav class="navbar navbar-default navbar-primary navbar-fixed-top no-margin" data-scroll-header>
+  <!-- status bar -->
+  <div class="background-accent">
+    <div class="container-fluid">
+      <div class="text-md-right">
+        <ul class="list-inline no-margin">
+          <li>
+            <a href="mailto:{{ site.brand.email }}">
+              <span class="wrapper">
+                <i class="fa fa-fw fa-envelope"></i>
+                <!-- <i class="fa fa-fw fa-2x fa-envelope visible-xs"></i> -->
+              </span><!-- .wrapper -->
+              <span class="hidden-xs">
+                <small>{{ site.brand.email }}</small>
+              </span><!-- hidden-xs -->
+            </a>
+          </li>
+          <li>
+            <a href="tel:{{ site.brand.phone }}" target="_blank">
+              <span class="wrapper">
+                <i class="fa fa-fw fa-phone"></i>
+                <!-- <i class="fa fa-fw fa-2x fa-phone visible-xs"></i> -->
+              </span><!-- .wrapper -->
+              <span class="hidden-xs">
+                <code class="color-primary no-background">
+                  <small>{{ site.brand.phone }}</small>
+                </code>
+              </span><!-- hidden-xs -->
+            </a>
+          </li>
+          <li>
+            <a href="skype:{{ site.brand.social.skype }}?call">
+              <span class="wrapper">
+                <i class="fa fa-fw fa-skype"></i>
+                <!-- <i class="fa fa-fw fa-2x fa-skype visible-xs"></i> -->
+              </span><!-- .wrapper -->
+              <span class="hidden-xs">
+                <small>{{ site.brand.social.skype }}</small>
+              </span>
+            </a>
+          </li>
+        </ul><!-- .list-inline -->
+      </div><!-- .text-md-center -->
+    </div><!-- .container-fluid -->
+  </div><!-- .background-accent -->
+  <!-- end status-bar -->
+
+  <div class="container">
+    <div class="navbar-header">
+      <button class="collapsed navbar-toggle btn-primary no-border" data-toggle="collapse" data-target="#appBar-collapse">
+        <div class="text-uppercase font-bold">
+          Menu
+        </div>
+      </button>
+      <a class="navbar-brand" href="{{ site.baseurl }}">
+        <img src="{{ site.urls.images }}/brand-logo.png"/>
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="appBar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        {% for link in site.data.navbar.links %}
+          <li>
+            <a href="{{ link.url }}">
+              <span class="text-uppercase">
+                {{ link.title }}
+              </span>
+            </a>
+          </li>
+          {% unless forloop.last %}
+            <li>
+              <div class="divider-vertical visible-lg"></div>
+            </li>
+          {% endunless %}
+        {% endfor %}
+      </ul><!-- .navbar-nav -->
+    </div><!-- .navbar-collapse -->
+  </div><!-- .container -->
+</nav>

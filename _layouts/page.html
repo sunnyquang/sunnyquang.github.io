@@ -1,0 +1,23 @@
+---
+layout: base
+---
+<div class="brand-bg-accent">
+  <div class="container">
+    <div class="page-header no-border text-center">
+      <h2 class="text-uppercase font-heavy text-muted">
+        {% if page.heading %}
+          {{ page.heading }}
+        {% else %}
+          {{ page.title }}
+        {% endif %}
+      </h2>
+      {% if page.subheading %}
+        <br/>
+        <h4>{{ page.subheading }}</h4>
+      {% endif %}
+    </div>
+  </div>
+  <div class="wrapper">
+    {{ content }}
+  </div>
+</div>

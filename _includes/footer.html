@@ -1,0 +1,107 @@
+    {% include scripts.html %}
+    <footer class="background-primary">
+      <div class="container-fluid">
+        <div class="row" id="consultation">
+          <div class="col-md-6 col-md-offset-3">
+            <div class="page-header no-border">
+              <h4 class="text-center font-heavy text-uppercase">
+                Request for consultation
+              </h4>
+            </div><!-- .page-header -->
+
+            <!-- form - consultation -->
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                {% include components/forms/consultation.html %}
+              </div><!-- .col (3 - 6 - 3) -->
+            </div><!-- .row -->
+
+          </div><!-- .col-md-6 -->
+
+        </div>
+      </div>
+
+      <hr style="border-width: 5px;"/>
+
+      <div class="container-fluid">
+        <div class="wrapper">
+          <div class="page-header no-border">
+            <h4 class="text-center font-heavy text-uppercase">
+              Follow me on
+            </h4>
+          </div><!-- .page-header -->
+
+          <div class="text-center">
+            <div class="panel panel-default no-background no-border no-shadow no-margin">
+              <div class="panel-body">
+                <ul class="list-inline">
+                  <li>
+                    <a target="_blank" class="link-inverse" href="{{ site.brand.social.instagram }}">
+                      <i class="fa fa-fw fa-3x fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" class="link-inverse" href="{{ site.brand.social.facebook }}">
+                      <i class="fa fa-fw fa-3x fa-facebook"></i>
+                    </a>
+                  </li>
+                  <!--
+                  <li>
+                    <a target="_blank" class="link-inverse" href="{{ site.brand.social.twitter }}">
+                      <i class="fa fa-fw fa-3x fa-twitter"></i>
+                    </a>
+                  </li>
+                  -->
+                </ul><!-- .list-inline -->
+              </div><!-- .panel-body -->
+            </div><!-- .panel -->
+
+            <div class="panel panel-default no-background no-border no-shadow no-margin">
+              <div class="panel-body">
+                <!-- nav -->
+                <ul class="list-inline">
+                  {% for link in site.data.navbar.links %}
+                  <li>
+                    <a class="link-inverse" href="{{ link.url }}">
+                      <div class="text-uppercase">
+                        {{ link.title }}
+                      </div>
+                    </a>
+                  </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- copyright -->
+        <div class="copyright">
+          <div class="panel panel-default no-background no-border no-shadow no-margin">
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="text-left text-md-center">
+                    <small>
+                      All rights reserved &copy; <span class="copyright-date"></span> -
+                        <a class="link-inverse" href="{{ site.baseurl }}">{{ site.brand.name }}</a>
+                    </small>
+                  </div><!-- .text-left -->
+                </div><!-- .col-md-6 -->
+                <div class="col-md-6">
+                  <div class="text-right text-md-center">
+                    <small>
+                      Proudly powered by <a class="link-inverse text-uppercase" href="http://syiree.com" target="_blank">Syiree</a>
+                    </small>
+                  </div><!-- .text-right -->
+                </div><!-- .col-md-6 -->
+              </div><!-- .row -->
+            </div><!-- .panel-body -->
+          </div><!-- .panel -->
+        </div><!-- .copyright -->
+      </div><!-- .container -->
+    </footer>
+    {% include components/modals/info.html %}
+  </body>
+</html>

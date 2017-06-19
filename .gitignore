@@ -1,0 +1,13 @@
+# virtual env
+.venv
+
+# Dependencies
+node_modules
+Gemfile.lock
+
+# Cache
+.sass-cache
+_site
+
+# misc
+blog

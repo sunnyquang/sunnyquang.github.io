@@ -1,0 +1,37 @@
+---
+layout: base
+title: About
+heading: About Me
+---
+<div class="background-accent">
+  <div class="hidden-lg">
+    <img class="img-responsive center-block"
+      src="{{ site.urls.images }}/about-landscape.jpg"
+      style="width: 100%"/>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 visible-lg">
+        <img class="img-responsive  center-block" src="{{ site.urls.images }}/about-square.jpg" style="width: 100%"/>
+      </div><!-- .col-md-6 -->
+      <div class="col-md-6">
+        <div class="panel panel-default no-background no-border no-shadow">
+          <div class="panel-body">
+            <div class="page-header no-border text-center">
+              <h2 class="text-uppercase font-heavy color-brand">
+                {{ page.heading }}
+              </h2>
+            </div><!-- .page-header -->
+
+            {% for paragraph in site.data.about.paragraphs %}
+              <p class="text-justify font-light" style="line-height: 1.5em;">
+                {{ paragraph }}
+              </p>
+            {% endfor %}
+
+          </div><!-- .panel-body -->
+        </div><!-- .panel -->
+      </div><!-- .col-md-6 -->
+    </div><!-- .row -->
+  </div><!-- .container -->
+</div><!-- .background-accent -->

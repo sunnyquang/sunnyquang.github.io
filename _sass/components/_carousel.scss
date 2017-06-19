@@ -1,0 +1,12 @@
+.lcarousel-card {
+  // background-color: $carousel-card-bgcolor !important;
+  border-radius: $carousel-card-border-radius !important;
+  color: $carousel-card-color !important;
+  // opacity: 0.65;
+
+  .btn-default {
+    background-color: $carousel-card-btn-bgcolor !important;
+    color: $carousel-card-btn-color !important;
+    border-radius: $carousel-card-btn-border-radius !important;
+  }
+}

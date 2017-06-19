@@ -1,0 +1,208 @@
+---
+layout: base
+title: Home
+---
+<!-- landing carousel -->
+<div class="carousel slide" id="lcarousel" data-ride="carousel">
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="{{ site.urls.images }}/carousel/1.jpg" style="width: 100%;"/>
+      <div class="container">
+        <div class="carousel-caption">
+          <div class="row">
+            <div class="col-md-7">
+              <div class="panel panel-default lcarousel-card" style="background-color: rgba(255, 0, 0, 0.70) !important;">
+                <div class="panel-body text-center">
+                  <div class="wrapper">
+                    <h1 class="text-uppercase font-heavy visible-lg" style="line-height: 1.25em;">
+                      Get fit with
+                      <br/>
+                      {{ site.brand.name }}
+                    </h1>
+                    <h4 class="text-uppercase font-heavy hidden-lg" style="line-height: 1.25em;">
+                      Get fit with
+                      <br/>
+                      {{ site.brand.name }}
+                    </h4>
+                    <h4 class="text-uppercase font-bold visible-lg">
+                      Book a consultation
+                    </h4>
+                    <h5 class="text-uppercase font-heavy hidden-lg">
+                      Book a consultation
+                    </h5>
+                  </div>
+
+                  <!-- button tab -->
+                  <div class="wrapper">
+                    <a data-scroll href="{{ site.baseurl }}#consultation"
+                      class="btn btn-default" style="margin: 5px;">
+                      <div class="text-uppercase">
+                        Book now
+                      </div>
+                    </a>
+                    <a href="tel:{{ site.brand.phone }}" target="_blank"
+                      class="btn btn-default" style="margin: 5px;">
+                      <div class="text-uppercase">
+                        Call now
+                      </div>
+                    </a>
+                  </div>
+                  <!-- end button tab -->
+                </div>
+              </div><!-- .panel -->
+            </div><!-- .col-md-7 -->
+          </div><!-- .row -->
+        </div><!-- .carousel-caption -->
+      </div><!-- .container -->
+    </div><!-- .item active -->
+
+    <div class="item">
+      <img src="{{ site.urls.images }}/carousel/2.jpg" style="width: 100%;"/>
+      <div class="container">
+        <div class="carousel-caption">
+          <div class="row">
+            <div class="col-md-7">
+              <div class="panel panel-default lcarousel-card" style="background-color: rgba(255, 0, 0, 0.45) !important;">
+                <div class="panel-body text-center">
+                  <div class="wrapper">
+                    <h1 class="text-uppercase font-heavy visible-lg visible-md" style="line-height: 1.25em;">
+                      Learn to Box
+                      <br/>
+                      Train <span class="font-light">like a</span> fighter
+                    </h1>
+                    <h4 class="text-uppercase font-heavy hidden-lg hidden-md" style="line-height: 1.25em;">
+                      Learn to Box
+                      <br/>
+                      Train <span class="font-light">like a</span> fighter
+                    </h4>
+                    <h4 class="visible-lg visible-md">
+                      Start your boxing training today
+                    </h4>
+                    <h5 class="hidden-lg hidden-md">
+                      Start your boxing training today
+                    </h5>
+                  </div>
+
+                  <!-- button tab -->
+                  <div class="wrapper">
+                    <a data-scroll href="{{ site.baseurl }}#consultation"
+                      class="btn btn-default" style="margin: 5px;">
+                      <div class="text-uppercase">
+                        Book now
+                      </div>
+                    </a>
+                    <a href="{{ site.baseurl }}/training"
+                      class="btn btn-default" style="margin: 5px;">
+                      <div class="text-uppercase">
+                        Buy now
+                      </div>
+                    </a>
+                  </div>
+                </div><!-- .panel-body -->
+              </div><!-- .panel -->
+            </div><!-- .col-md-7 -->
+          </div><!-- .row -->
+        </div><!-- .carousel-caption -->
+      </div><!-- .container -->
+    </div>
+
+    <div class="item">
+      <img src="{{ site.urls.images }}/carousel/3.jpg" style="width: 100%;"/>
+      <div class="container">
+        <div class="carousel-caption">
+          <div class="row">
+            <div class="col-md-offset-5 col-md-7">
+              <div class="panel panel-default lcarousel-card" style="background-color: rgba(255, 0, 0, 0.55) !important;">
+                <div class="panel-body text-center">
+                  <div class="wrapper">
+                    <h1 class="text-uppercase font-heavy visible-lg visible-md" style="line-height: 1.25em;">
+                      One-on-One Personal Training
+                    </h1>
+                    <h4 class="text-uppercase font-heavy hidden-lg hidden-md" style="line-height: 1.25em;">
+                      One-on-One Personal Training
+                    </h4>
+                  </div>
+
+                  <!-- button tab -->
+                  <div class="wrapper">
+                    <a data-scroll href="{{ site.baseurl }}#consultation"
+                      class="btn btn-default" style="margin: 5px;">
+                      <div class="text-uppercase">
+                        Book now
+                      </div>
+                    </a>
+                  </div>
+                </div><!-- .panel-body -->
+              </div><!-- .panel -->
+            </div><!-- .col-md-7 -->
+          </div><!-- .row -->
+        </div><!-- .carousel-caption -->
+      </div>
+    </div>
+
+  </div>
+
+  <!-- controls -->
+  <div class="wrapper">
+    <a href="#lcarousel" data-slide="prev" class="carousel-control left">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a href="#lcarousel" data-slide="next" class="carousel-control right">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+  </div>
+
+</div>
+
+<div class="wrapper background-accent">
+  <div class="container">
+    <br/><!-- SHITAKE -->
+    <!-- biography -->
+    <section id="biography">
+      <div class="page-header no-border text-center">
+        <h2 class="text-uppercase font-heavy">
+          Biography
+        </h2>
+      </div>
+      <div class="panel panel-default no-background no-border no-shadow">
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+              {% for paragraph in site.data.about.paragraphs %}
+                <p class="text-justify font-light" style="line-height: 1.5em;">
+                  {{ paragraph }}
+                </p>
+              {% endfor %}
+            </div><!-- .col (4 - 4 - 4)-->
+          </div><!-- .row -->
+        </div><!-- .panel-body -->
+      </div><!-- .panel -->
+    </section>
+    <!-- end biography -->
+  </div>
+</div>
+
+<div class="wrapper background-inverse">
+  <div class="container">
+    <!-- certifications -->
+    <section id="certifications">
+      <div class="panel panel-default no-background no-border no-shadow no-margin">
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+              <div class="row">
+                {% for certification in site.data.images.certifications %}
+                  <div class="col-xs-3">
+                    <img style="max-height: 125px;" class="img-responsive center-block lazy"
+                      data-original="{{ certification.src }}"/>
+                  </div><!-- .col (4 - 4 - 4) -->
+                {% endfor %}
+              </div><!-- .row -->
+            </div><!-- .col (4 - 4 - 4)-->
+          </div><!-- .row -->
+        </div><!-- .panel-body -->
+      </div><!-- .panel -->
+    </section>
+    <!-- end certifications -->
+  </div>
+</div>

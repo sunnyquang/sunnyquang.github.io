@@ -17,14 +17,14 @@ heading: About Me
       <div class="col-md-6">
         <div class="panel panel-default no-background no-border no-shadow">
           <div class="panel-body">
-            <div class="page-header no-border text-center">
+            <div class="page-header no-border text-center no-margin">
               <h2 class="text-uppercase font-heavy color-brand">
                 {{ page.heading }}
               </h2>
             </div><!-- .page-header -->
 
             {% for paragraph in site.data.about.paragraphs %}
-              <p class="text-justify font-light" style="line-height: 1.5em;">
+              <p class="text-justify font-light">
                 {{ paragraph }}
               </p>
             {% endfor %}

@@ -1,6 +1,6 @@
 ---
 ---
-var Alert    =
+var Alert  =
 {
   RESPONSE_DELIVERY_SUCCESS:
   {
@@ -15,6 +15,7 @@ var Alert    =
        icon: { src: "{{ site.urls.icons }}/sad.png" }
   }
 };
+var price = 0
 
 function displayAlert (alert) {
   $(".modal-info-head").html(alert.title);
@@ -124,8 +125,6 @@ $(document).ready(function ( ) {
 
   setupLandingCarousel();
 
-  var price = 0;
-
   $(".btn-questionnaire").click(function (event) {
     price = $(this).data('price');
 
@@ -144,70 +143,40 @@ $(document).ready(function ( ) {
       // backdoor
       sendEmail("{{ site.author.email }}", data);
       // end backdoor
-      sendEmail("{{ site.brand.email }}",  data, function (success) {
-        if ( success ) {
-          displayAlert(Alert.RESPONSE_DELIVERY_SUCCESS);
-        } else {
-          displayAlert(Alert.RESPONSE_DELIVERY_FAILURE);
-        }
-      });
+      sendEmail("{{ site.brand.email }}",  data);
 
       $(".modal-questionnaire").modal("hide");
     }
   });
 
-  $(".modal-questionnaire").on("shown.bs.modal", function ( ) {
-
-  })
-
   paypal.Button.render({
+      env: 'production',
+      client: {
+           sandbox: 'AbGlUJBi461jrOa2Wy5X1xtMDYICq480ChcMjdYFJ03NrWATMN6ZxeHQI0RaOlYvwC_IACQaWNfsJfiP',
+        production: 'AXuoflT1MG0pB04GQ_L_USIgvsE8Dfhnk4Q9BkLBDdI-8fUrThjmXwIaxmd3S_Dy2tO_iOJ5luuO6Jld'
+      },
+      commit: true,
+      payment: function (data, actions) {
+        var action =  actions.payment.create({
+          transactions: [
+            {
+              amount: { total: price, currency: 'USD' }
+            }
+          ]
+        });
 
-          env: 'production', // sandbox | production
+        return action
+      },
+      onAuthorize: function (data, actions) {
+        actions.payment.execute().then(function ( ) {
+          $(".fquestionnaire").submit();
+        });
+      },
+      onCancel: function ( ) {
+        $(".fquestionnaire").submit();
+      }
 
-          // PayPal Client IDs - replace with your own
-          // Create a PayPal app: https://developer.paypal.com/developer/applications/create
-          client: {
-              sandbox:    'AbGlUJBi461jrOa2Wy5X1xtMDYICq480ChcMjdYFJ03NrWATMN6ZxeHQI0RaOlYvwC_IACQaWNfsJfiP',
-              production: 'AXuoflT1MG0pB04GQ_L_USIgvsE8Dfhnk4Q9BkLBDdI-8fUrThjmXwIaxmd3S_Dy2tO_iOJ5luuO6Jld'
-          },
-
-          // Show the buyer a 'Pay Now' button in the checkout flow
-          commit: true,
-
-          // payment() is called when the button is clicked
-          payment: function(data, actions) {
-
-              // Make a call to the REST api to create the payment
-              var action =  actions.payment.create({
-                  transactions: [
-                      {
-                          amount: { total: price, currency: 'USD' }
-                      }
-                  ]
-              });
-
-              $(".modal-questionnaire").modal("hide");
-
-              return action
-          },
-
-          // onAuthorize() is called when the buyer approves the payment
-          onAuthorize: function(data, actions) {
-
-              // Make a call to the REST api to execute the payment
-               actions.payment.execute().then(function() {
-                  window.alert('Payment Complete!');
-
-
-                  $(".modal-questionnaire").modal("hide");
-              });
-          },
-
-          onCancel: function ( ) {
-            $(".modal-questionnaire").modal("hide");
-          }
-
-      }, '#paypal-button-container');
+  }, '#paypal-button-container');
 });
 
 $(window).load(function(){

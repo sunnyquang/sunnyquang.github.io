@@ -1,23 +1,22 @@
-<form role="form" data-toggle="validator" class="fquestionnaire" style="color: #727272;">
+<form role="form" class="fquestionnaire" style="color: #727272;">
   <div class="row">
     <div class="col-md-6">
-      <div class="form-group has-feedback">
-        <label for="name" class="control-label font-light">Name</label>
-        <input class="form-control" name="name" type="text" required/>
-        <div class="help-block with-errors"></div>
+      <div class="form-group">
+        <label for="Name" class="control-label font-light">Name</label>
+        <input class="form-control" name="Name" type="text"/>
       </div><!-- .form-group -->
     </div>
     <div class="col-md-6">
-      <div class="form-group has-feedback">
+      <div class="form-group">
         <!-- formspree.io option -->
-        <label for="_replyto" class="control-label font-light">Email</label>
+        <label for="Email" class="control-label font-light">Email</label>
         <input
           class="form-control"
-          name="_replyto"
+          name="Email"
           data-error="Invalid Email address."
           type="email"
-          required/>
-        <div class="help-block with-errors"></div>
+          />
+
         <!-- end formspree.io option -->
       </div><!-- .form-group -->
     </div><!-- .col-md-6 -->
@@ -25,58 +24,54 @@
 
   <div class="row">
     <div class="col-md-6">
-      <div class="form-group has-feedback">
-        <label for="name" class="control-label font-light">Phone</label>
-        <input class="form-control" name="name" type="text" required/>
-        <div class="help-block with-errors"></div>
+      <div class="form-group">
+        <label for="Phone" class="control-label font-light">Phone</label>
+        <input class="form-control" name="Phone" type="text" />
+
       </div><!-- .form-group -->
     </div>
     <div class="col-md-6">
-      <div class="form-group has-feedback">
-        <label for="name" class="control-label font-light">Age</label>
-        <input class="form-control" name="name" type="text" required/>
-        <div class="help-block with-errors"></div>
+      <div class="form-group">
+        <label for="Age" class="control-label font-light">Age</label>
+        <input class="form-control" name="Age" type="number" min="0" max="100" />
+
       </div><!-- .form-group -->
     </div><!-- .col-md-6 -->
   </div><!-- .row -->
 
   <div class="row">
     <div class="col-md-6">
-      <div class="form-group has-feedback">
-        <label for="name" class="control-label font-light">Occupation</label>
-        <input class="form-control" name="name" type="text" required/>
-        <div class="help-block with-errors"></div>
+      <div class="form-group">
+        <label for="Occupation" class="control-label font-light">Occupation</label>
+        <input class="form-control" name="Occupation" type="text"/>
       </div><!-- .form-group -->
     </div>
   </div><!-- .row -->
 
-  <div class="form-group has-feedback">
-    <label for="message" class="control-label font-light">
+  <div class="form-group">
+    <label for="DescribeYourGoalsAsTheyPertainToWorkingWithATrainer" class="control-label font-light">
       Describe your goals as they pertain to working with a trainer.
     </label>
-    <textarea rows="5" class="form-control" name="message" required></textarea>
-    <div class="help-block with-errors"></div>
+    <textarea rows="5" class="form-control" name="DescribeYourGoalsAsTheyPertainToWorkingWithATrainer"></textarea>
   </div><!-- .form-group -->
 
-  <div class="form-group has-feedback">
-    <label for="message" class="control-label font-light">
+  <div class="form-group">
+    <label for="AreYouCurrentlyExcercistingListActivities" class="control-label font-light">
       Are you currently excercising? List type of Activities. Days / Weeks & Minutes / Day.
     </label>
-    <textarea rows="5" class="form-control" name="message" required></textarea>
-    <div class="help-block with-errors"></div>
+    <textarea rows="5" class="form-control" name="AreYouCurrentlyExcercistingListActivities"></textarea>
   </div><!-- .form-group -->
 
-  <div class="form-group has-feedback">
-    <label for="message" class="control-label font-light">
+  <div class="form-group">
+    <label for="HowLongHaveYouBeenExcercisingRegularly" class="control-label font-light">
       How long have you been excercising regularly?
     </label>
-    <textarea rows="5" class="form-control" name="message" required></textarea>
-    <div class="help-block with-errors"></div>
+    <textarea rows="5" class="form-control" name="HowLongHaveYouBeenExcercisingRegularly" ></textarea>
   </div><!-- .form-group -->
 
   <hr style="border: 3px #F82830 solid"/>
 
-  <div class="page-header no-margin">
+  <div class="page-header no-border no-margin">
     <h4 class="font-bold">
       Do you know the following information?
     </h4>
@@ -84,34 +79,31 @@
 
   <div class="row">
     <div class="col-md-6">
-      <div class="form-group has-feedback">
-        <label for="name" class="control-label font-light">Resting Heart Rate</label>
-        <input class="form-control" name="name" type="text" required/>
-        <div class="help-block with-errors"></div>
+      <div class="form-group">
+        <label for="RestingHeartRate" class="control-label font-light">Resting Heart Rate</label>
+        <input class="form-control" name="RestingHeartRate" type="text"/>
       </div><!-- .form-group -->
     </div>
     <div class="col-md-6">
-      <div class="form-group has-feedback">
-        <label for="name" class="control-label font-light">Blood Pressure</label>
-        <input class="form-control" name="name" type="text" required/>
-        <div class="help-block with-errors"></div>
+      <div class="form-group">
+        <label for="BloodPressure" class="control-label font-light">Blood Pressure</label>
+        <input class="form-control" name="BloodPressure" type="text"/>
       </div><!-- .form-group -->
     </div><!-- .col-md-6 -->
   </div><!-- .row -->
 
   <div class="row">
     <div class="col-md-6">
-      <div class="form-group has-feedback">
-        <label for="name" class="control-label font-light">Body Fat (%)</label>
-        <input class="form-control" name="name" type="text" required/>
-        <div class="help-block with-errors"></div>
+      <div class="form-group">
+        <label for="BodyFat" class="control-label font-light">Body Fat (%)</label>
+        <input class="form-control" name="BodyFat" type="text"/>
       </div><!-- .form-group -->
     </div>
   </div><!-- .row -->
 
   <hr style="border: 3px #F82830 solid"/>
 
-  <div class="page-header no-margin">
+  <div class="page-header no-border no-margin">
     <h4 class="font-bold">
       Do you have any significant medical corners that would impact your ability
       to exercise?
@@ -120,131 +112,112 @@
 
   <div class="row">
     <div class="col-md-6">
-      <div class="form-group has-feedback">
-        <label for="name" class="control-label font-light">Cardiovascular Diseases</label>
-        <input class="form-control" name="name" type="text" required/>
-        <div class="help-block with-errors"></div>
+      <div class="form-group">
+        <label for="MedicalCornersCardiovascularDiseases" class="control-label font-light">Cardiovascular Diseases</label>
+        <input class="form-control" name="MedicalCornersCardiovascularDiseases" type="text"/>
       </div><!-- .form-group -->
     </div>
     <div class="col-md-6">
-      <div class="form-group has-feedback">
-        <!-- formspree.io option -->
-        <label for="_replyto" class="control-label font-light">Stroke</label>
-        <input
-          class="form-control"
-          name="_replyto"
-          data-error="Invalid Email address."
-          type="email"
-          required/>
-        <div class="help-block with-errors"></div>
-        <!-- end formspree.io option -->
+      <div class="form-group">
+        <label for="MedicalCornersStroke" class="control-label font-light">Stroke</label>
+        <input class="form-control" name="MedicalCornersStroke" type="text"/>
       </div><!-- .form-group -->
     </div><!-- .col-md-6 -->
   </div><!-- .row -->
 
   <div class="row">
     <div class="col-md-6">
-      <div class="form-group has-feedback">
-        <label for="name" class="control-label font-light">Diabetes</label>
-        <input class="form-control" name="name" type="text" required/>
-        <div class="help-block with-errors"></div>
+      <div class="form-group">
+        <label for="MedicalCornersDiabetes" class="control-label font-light">Diabetes</label>
+        <input class="form-control" name="MedicalCornersDiabetes" type="text"/>
       </div><!-- .form-group -->
     </div>
     <div class="col-md-6">
-      <div class="form-group has-feedback">
-        <label for="name" class="control-label font-light">Hypertension</label>
-        <input class="form-control" name="name" type="text" required/>
-        <div class="help-block with-errors"></div>
+      <div class="form-group">
+        <label for="MedicalCornersHyperTension" class="control-label font-light">Hypertension</label>
+        <input class="form-control" name="MedicalCornersHyperTension" type="text"/>
       </div><!-- .form-group -->
     </div><!-- .col-md-6 -->
   </div><!-- .row -->
 
-  <div class="form-group has-feedback">
-    <label for="name" class="control-label font-light">
+  <div class="form-group">
+    <label for="DoYouSmokeHowLong" class="control-label font-light">
       Do you smoke? If yes, how long?
     </label>
-    <input class="form-control" name="name" type="text" required/>
-    <div class="help-block with-errors"></div>
+    <input class="form-control" name="DoYouSmokeHowLong" type="text"/>
   </div><!-- .form-group -->
 
-  <div class="form-group has-feedback">
-    <label for="name" class="control-label font-light">
+  <div class="form-group">
+    <label for="DateOfLastDoctorVisitOrPhysical" class="control-label font-light">
       Date of last Doctor Visit / Physical?
     </label>
-    <input class="form-control" name="name" type="text" required/>
-    <div class="help-block with-errors"></div>
+    <input class="form-control" name="DateOfLastDoctorVisitOrPhysical" type="text"/>
   </div><!-- .form-group -->
 
   <hr style="border: 3px #F82830 solid"/>
 
-  <div class="page-header no-margin">
+  <div class="page-header no-border no-margin">
     <h4 class="font-bold">
       Muscular Skeletal Issues
     </h4>
   </div>
 
-  <div class="form-group has-feedback">
-    <label for="message" class="control-label font-light">
+  <div class="form-group">
+    <label for="MuscularIssueFeetAnkle" class="control-label font-light">
       Feet / Ankle
     </label>
-    <textarea rows="5" class="form-control" name="message" required></textarea>
-    <div class="help-block with-errors"></div>
+    <textarea rows="5" class="form-control" name="MuscularIssueFeetAnkle"></textarea>
   </div><!-- .form-group -->
 
-  <div class="form-group has-feedback">
-    <label for="message" class="control-label font-light">
+  <div class="form-group">
+    <label for="MuscularIssueKnees" class="control-label font-light">
       Knees
     </label>
-    <textarea rows="5" class="form-control" name="message" required></textarea>
-    <div class="help-block with-errors"></div>
+    <textarea rows="5" class="form-control" name="MuscularIssueKnees" ></textarea>
+
   </div><!-- .form-group -->
 
-  <div class="form-group has-feedback">
-    <label for="message" class="control-label font-light">
+  <div class="form-group">
+    <label for="MuscularIssueHips" class="control-label font-light">
       Hips
     </label>
-    <textarea rows="5" class="form-control" name="message" required></textarea>
-    <div class="help-block with-errors"></div>
+    <textarea rows="5" class="form-control" name="MuscularIssueHips"></textarea>
   </div><!-- .form-group -->
 
-  <div class="form-group has-feedback">
-    <label for="message" class="control-label font-light">
+  <div class="form-group">
+    <label for="MuscularIssueBackSpine" class="control-label font-light">
       Back / Spine
     </label>
-    <textarea rows="5" class="form-control" name="message" required></textarea>
-    <div class="help-block with-errors"></div>
+    <textarea rows="5" class="form-control" name="MuscularIssueBackSpine"></textarea>
   </div><!-- .form-group -->
 
-  <div class="form-group has-feedback">
-    <label for="message" class="control-label font-light">
+  <div class="form-group">
+    <label for="MuscularIssueShoulders" class="control-label font-light">
       Shoulders
     </label>
-    <textarea rows="5" class="form-control" name="message" required></textarea>
-    <div class="help-block with-errors"></div>
+    <textarea rows="5" class="form-control" name="MuscularIssueShoulders"></textarea>
   </div><!-- .form-group -->
 
-  <div class="form-group has-feedback">
-    <label for="message" class="control-label font-light">
+  <div class="form-group">
+    <label for="MuscularIssueElbowWrist" class="control-label font-light">
       Elbow / Wrist
     </label>
-    <textarea rows="5" class="form-control" name="message" required></textarea>
-    <div class="help-block with-errors"></div>
+    <textarea rows="5" class="form-control" name="MuscularIssueElbowWrist"></textarea>
+
   </div><!-- .form-group -->
 
-  <div class="form-group has-feedback">
-    <label for="message" class="control-label font-light">
+  <div class="form-group">
+    <label for="AreYouCurrentlyTakingAnyMedications" class="control-label font-light">
       Are you currently taking any medications?
     </label>
-    <textarea rows="5" class="form-control" name="message" required></textarea>
-    <div class="help-block with-errors"></div>
+    <textarea rows="5" class="form-control" name="AreYouCurrentlyTakingAnyMedications"></textarea>
   </div><!-- .form-group -->
 
-  <div class="form-group has-feedback">
-    <label for="message" class="control-label font-light">
+  <div class="form-group">
+    <label for="HaveYouRecentlyBeenInjuredOrUndergoneSurgeryExplain" class="control-label font-light">
       Have you recently been injured or undergone sugergy? Explain.
     </label>
-    <textarea rows="5" class="form-control" name="message" required></textarea>
-    <div class="help-block with-errors"></div>
+    <textarea rows="5" class="form-control" name="HaveYouRecentlyBeenInjuredOrUndergoneSurgeryExplain"></textarea>
   </div><!-- .form-group -->
 
   <div class="text-center">
@@ -252,7 +225,7 @@
   </div>
 
   <!-- formspree.io options -->
-  <input type="hidden" name="_subject" value="New Message | {{ site.brand.name }} Website">
+  <input type="hidden" name="_subject" value="Questionnaire | {{ site.brand.name }} Website">
   <input type="text" name="_gotcha" style="display:none"/>
   <!-- end formspree.io options -->
 </form><!-- form -->

@@ -25,7 +25,7 @@ data:
         power, and strength.', 'Sunny holds a degree from the National Personal Training
         Institute. His personal training certifications include NASM certified, Kettlebell
         certified, Trigger point certified, and as a Box n Burn boxing instructor.
-        Sunny teaches boxing classes on the weekends. All Packages are welcomed.']
+        Sunny teaches boxing classes on the weekends. All level are welcomed.']
   images:
     carousel:
     - {src: /assets/img/carousel/1.jpg}
@@ -45,10 +45,9 @@ data:
     - {title: Training, url: /training}
     - {title: Contact, url: /contact.html}
   training:
-    Packages:
+    level:
       advance:
-        link: /training/advance.html
-        packages:
+        level:
         - duration: 60
           equipment: [gym]
           image: {src: /assets/img/training/thumbnails/advance/1.jpg}
@@ -67,10 +66,10 @@ data:
           name: Package 3
           price: 900
           sessions: 12
+        link: /training/advance.html
         tagline: Fitness beyond Limits
       beginner:
-        link: /training/beginner.html
-        packages:
+        level:
         - duration: 30
           equipment: [gym]
           image: {src: /assets/img/training/thumbnails/beginner/1.jpg}
@@ -89,10 +88,10 @@ data:
           name: Package 3
           price: 540
           sessions: 12
+        link: /training/beginner.html
         tagline: Unlock your Potential
       intermediate:
-        link: /training/intermediate.html
-        packages:
+        level:
         - duration: 45
           equipment: [gym]
           image: {src: /assets/img/training/thumbnails/intermediate/1.jpg}
@@ -110,6 +109,7 @@ data:
           name: Package 3
           price: 720
           sessions: 12
+        link: /training/intermediate.html
         tagline: Experience the Power of Transformation
 description: ''
 environment: development

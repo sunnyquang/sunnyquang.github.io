@@ -96,7 +96,7 @@ CONFIG.data.images.carousel                 = [
 CONFIG.data.training.levels.beginner        = {
     'tagline': 'Unlock your Potential',
        'link': relurljoin(CONFIG.baseurl, 'training', 'beginner.html'),
-   'level': [
+   'packages': [
         {
                 'name': 'Package 1',
                'image': { 'src': relurljoin(CONFIG.urls.images, 'training',
@@ -130,7 +130,7 @@ CONFIG.data.training.levels.beginner        = {
 CONFIG.data.training.levels.intermediate       = {
     'tagline': 'Experience the Power of Transformation',
        'link': relurljoin(CONFIG.baseurl, 'training', 'intermediate.html'),
-    'level': [
+    'packages': [
         {
                 'name': 'Package 1',
                'image': { 'src': relurljoin(CONFIG.urls.images, 'training',
@@ -163,7 +163,7 @@ CONFIG.data.training.levels.intermediate       = {
 CONFIG.data.training.levels.advance            = {
     'tagline': 'Fitness beyond Limits',
        'link': relurljoin(CONFIG.baseurl, 'training', 'advance.html'),
-   'level': [
+   'packages': [
         {
                 'name': 'Package 1',
                'image': { 'src': relurljoin(CONFIG.urls.images, 'training',

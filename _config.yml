@@ -47,7 +47,8 @@ data:
   training:
     levels:
       advance:
-        level:
+        link: /training/advance.html
+        packages:
         - duration: 60
           equipment: [gym]
           image: {src: /assets/img/training/thumbnails/advance/1.jpg}
@@ -66,10 +67,10 @@ data:
           name: Package 3
           price: 900
           sessions: 12
-        link: /training/advance.html
         tagline: Fitness beyond Limits
       beginner:
-        level:
+        link: /training/beginner.html
+        packages:
         - duration: 30
           equipment: [gym]
           image: {src: /assets/img/training/thumbnails/beginner/1.jpg}
@@ -88,10 +89,10 @@ data:
           name: Package 3
           price: 540
           sessions: 12
-        link: /training/beginner.html
         tagline: Unlock your Potential
       intermediate:
-        level:
+        link: /training/intermediate.html
+        packages:
         - duration: 45
           equipment: [gym]
           image: {src: /assets/img/training/thumbnails/intermediate/1.jpg}
@@ -109,7 +110,6 @@ data:
           name: Package 3
           price: 720
           sessions: 12
-        link: /training/intermediate.html
         tagline: Experience the Power of Transformation
 description: ''
 environment: development

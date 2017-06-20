@@ -45,7 +45,7 @@ data:
     - {title: Training, url: /training}
     - {title: Contact, url: /contact.html}
   training:
-    level:
+    levels:
       advance:
         level:
         - duration: 60

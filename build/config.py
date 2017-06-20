@@ -93,7 +93,7 @@ CONFIG.data.images.carousel                 = [
     for filename in os.listdir(os.path.join(CONFIG.path.images, 'carousel'))
 ]
 
-CONFIG.data.training.level.beginner        = {
+CONFIG.data.training.levels.beginner        = {
     'tagline': 'Unlock your Potential',
        'link': relurljoin(CONFIG.baseurl, 'training', 'beginner.html'),
    'level': [
@@ -127,7 +127,7 @@ CONFIG.data.training.level.beginner        = {
    ]
 }
 
-CONFIG.data.training.level.intermediate       = {
+CONFIG.data.training.levels.intermediate       = {
     'tagline': 'Experience the Power of Transformation',
        'link': relurljoin(CONFIG.baseurl, 'training', 'intermediate.html'),
     'level': [
@@ -160,7 +160,7 @@ CONFIG.data.training.level.intermediate       = {
        ]
 }
 
-CONFIG.data.training.level.advance            = {
+CONFIG.data.training.levels.advance            = {
     'tagline': 'Fitness beyond Limits',
        'link': relurljoin(CONFIG.baseurl, 'training', 'advance.html'),
    'level': [

@@ -1,59 +1,63 @@
 ---
 layout: page
 ---
-{% for package in site.data.training.levels[page.level].packages %}
 <div class="container-fluid">
-  <div class="row">
-    <div class="col-md-6">
-      <img class="img-responsive center-block" src="{{ package.image.src }}">
-    </div>
-    <div class="col-md-6">
-      <div class="panel panel-default no-border no-background no-shadow">
-        <div class="panel-body">
-          <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-              <div class="text-center wrapper">
-                <div class="wrapper">
-                  <h1 class="text-muted text-uppercase font-bold">
-                    {{ package.name }}
-                  </h1>
-                  <p>
-                    <span class="font-bold">Ability: </span>
-                    <span class="text-capitalize">{{ page.level }}</span>
-                  </p>
-                  <p>
-                    <span class="font-bold">Duration: </span>
-                    <span class="text-capitalize">{{ package.duration }} mins</span>
-                  </p>
-                  <p>
-                    <span class="font-bold">Sessions: </span>
-                    <span class="text-capitalize">{{ package.sessions }}</span>
-                  </p>
-                  <p>
-                    <span class="font-bold">Equipment: </span>
-                    <span class="text-capitalize">{{ package.equipment | join: ', ' }}</span>
-                  </p>
+  {% for package in site.data.training.levels[page.level].packages %}
+    <div class="row">
+      <div class="col-md-6">
+        <img class="img-responsive center-block" src="{{ package.image.src }}">
+      </div>
+      <div class="col-md-6">
+        <div class="panel panel-default no-border no-background no-shadow">
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-md-6 col-md-offset-3">
+                <div class="text-center wrapper">
+                  <div class="wrapper">
+                    <h1 class="text-muted text-uppercase font-bold">
+                      {{ package.name }}
+                    </h1>
+                    <p>
+                      <span class="font-bold">Ability: </span>
+                      <span class="text-capitalize">{{ page.level }}</span>
+                    </p>
+                    <p>
+                      <span class="font-bold">Duration: </span>
+                      <span class="text-capitalize">{{ package.duration }} mins</span>
+                    </p>
+                    <p>
+                      <span class="font-bold">Sessions: </span>
+                      <span class="text-capitalize">{{ package.sessions }} ({{ package.sessions | divided_by: 4 }} per week)</span>
+                    </p>
+                    <p>
+                      <span class="font-bold">Equipment: </span>
+                      <span class="text-capitalize">{{ package.equipment | join: ', ' }}</span>
+                    </p>
+                  </div>
+
+                  <button data-price="{{ package.price }}" class="btn btn-lg btn-accent btn-questionnaire text-uppercase font-bold">
+                    $ {{ package.price }} per month
+                  </button>
+
                 </div>
-
-                <button data-price="{{ package.price }}" class="btn btn-lg btn-accent btn-questionnaire text-uppercase font-bold">
-                  $ {{ package.price }} per month
-                </button>
-
-              </div>
-            </div><!-- .col-md-6 -->
-          </div><!-- .row -->
+              </div><!-- .col-md-6 -->
+            </div><!-- .row -->
+          </div>
         </div>
       </div>
+    </div><!-- .row -->
+  {% endfor %}
+
+  <div class="panel panel-default no-background no-border no-shadow no-margin">
+    <div class="panel-body">
+      <div class="text-center">
+        <h4 class="no-padding">
+          Can't make it to the gym? I can create a custom workout.
+        </h4>
+      </div>
     </div>
-  </div><!-- .row -->
-</div>
-{% endfor %}
+  </div>
 
-
-<div class="text-center">
-  <h4 class="no-padding">
-    Can't make it to the gym? We can create a custom workout.
-  </h4>
 </div>
 
 {% include components/modals/questionnaire.html %}

@@ -73,7 +73,7 @@ CONFIG.data.navbar.links                    = [
 CONFIG.data.about.paragraphs                = [
     'Sunny is an experienced personal trainer and boxing instructor. His approach focuses on teaching functional exercises for anyone interested in improving mobility, sports performance, and weight loss.',
     'Sunny began his personal training as an MMA fighter at the age of 19. He has several MMA fights under his belt and is currently being promoted by Legacy Fighting. In addition to being an accomplished MMA fighter, he has training across a wide spectrum of modalities including weightlifting, kettlebells, and boxing. His passion for training others is motivated by the conviction that we must counteract the inertia that accompanies our modern lifestyle by adopting a holistic mind body approach by utilizing functional exercises to develop mobility, power, and strength.',
-    'Sunny holds a degree from the National Personal Training Institute. His personal training certifications include NASM certified, Kettlebell certified, Trigger point certified, and as a Box n Burn boxing instructor. Sunny teaches boxing classes on the weekends. All levels are welcomed.'
+    'Sunny holds a degree from the National Personal Training Institute. His personal training certifications include NASM certified, Kettlebell certified, Trigger point certified, and as a Box n Burn boxing instructor. Sunny teaches boxing classes on the weekends. All Packages are welcomed.'
 ]
 
 CONFIG.author.email                         = 'syiree.official@gmail.com'
@@ -93,12 +93,12 @@ CONFIG.data.images.carousel                 = [
     for filename in os.listdir(os.path.join(CONFIG.path.images, 'carousel'))
 ]
 
-CONFIG.data.training.levels.beginner        = {
+CONFIG.data.training.Packages.beginner        = {
     'tagline': 'Unlock your Potential',
        'link': relurljoin(CONFIG.baseurl, 'training', 'beginner.html'),
    'packages': [
         {
-                'name': 'Level 1',
+                'name': 'Package 1',
                'image': { 'src': relurljoin(CONFIG.urls.images, 'training',
                     'thumbnails', 'beginner', '1.jpg') },
             'duration': 30,    # minutes
@@ -107,7 +107,7 @@ CONFIG.data.training.levels.beginner        = {
                'price': 180,   # USD
         },
         {
-                'name': 'Level 2',
+                'name': 'Package 2',
                'image': { 'src': relurljoin(CONFIG.urls.images, 'training',
                     'thumbnails', 'beginner', '2.jpg') },
             'duration': 30,
@@ -116,7 +116,7 @@ CONFIG.data.training.levels.beginner        = {
                'price': 360,
         },
         {
-                'name': 'Level 3',
+                'name': 'Package 3',
                'image': { 'src': relurljoin(CONFIG.urls.images, 'training',
                     'thumbnails', 'beginner', '3.jpg') },
             'duration': 30,
@@ -127,12 +127,12 @@ CONFIG.data.training.levels.beginner        = {
    ]
 }
 
-CONFIG.data.training.levels.intermediate       = {
+CONFIG.data.training.Packages.intermediate       = {
     'tagline': 'Experience the Power of Transformation',
        'link': relurljoin(CONFIG.baseurl, 'training', 'intermediate.html'),
     'packages': [
         {
-                'name': 'Level 1',
+                'name': 'Package 1',
                'image': { 'src': relurljoin(CONFIG.urls.images, 'training',
                     'thumbnails', 'intermediate', '1.jpg') },
             'duration': 45,    # minutes
@@ -141,7 +141,7 @@ CONFIG.data.training.levels.intermediate       = {
                'price': 240,   # USD
         },
         {
-                'name': 'Level 2',
+                'name': 'Package 2',
                'image': { 'src': relurljoin(CONFIG.urls.images, 'training',
                     'thumbnails', 'intermediate', '2.jpg') },
             'duration': 45,
@@ -150,7 +150,7 @@ CONFIG.data.training.levels.intermediate       = {
                'price': 480,
             },
             {
-                    'name': 'Level 3',
+                    'name': 'Package 3',
                    'image': { 'src': relurljoin(CONFIG.urls.images, 'training',
                         'thumbnails', 'intermediate', '3.jpg') },
                 'duration': 45,
@@ -160,12 +160,12 @@ CONFIG.data.training.levels.intermediate       = {
        ]
 }
 
-CONFIG.data.training.levels.advance            = {
+CONFIG.data.training.Packages.advance            = {
     'tagline': 'Fitness beyond Limits',
        'link': relurljoin(CONFIG.baseurl, 'training', 'advance.html'),
    'packages': [
         {
-                'name': 'Level 1',
+                'name': 'Package 1',
                'image': { 'src': relurljoin(CONFIG.urls.images, 'training',
                     'thumbnails', 'advance', '1.jpg') },
             'duration': 60,    # minutes
@@ -174,7 +174,7 @@ CONFIG.data.training.levels.advance            = {
                'price': 300,   # USD
         },
         {
-                'name': 'Level 2',
+                'name': 'Package 2',
                'image': { 'src': relurljoin(CONFIG.urls.images, 'training',
                     'thumbnails', 'advance', '2.jpg') },
             'duration': 60,
@@ -183,7 +183,7 @@ CONFIG.data.training.levels.advance            = {
                'price': 600,
         },
         {
-                'name': 'Level 3',
+                'name': 'Package 3',
                'image': { 'src': relurljoin(CONFIG.urls.images, 'training',
                     'thumbnails', 'advance', '3.jpg') },
             'duration': 60,

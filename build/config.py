@@ -67,7 +67,7 @@ CONFIG.data.navbar.links                    = [
     { "title": "Blog",       "url": "https://sunnyquang.tumblr.com" },
     { "title": "Boxing",     "url": relurljoin(CONFIG.baseurl, 'boxing') },
     { "title": "Training",   "url": relurljoin(CONFIG.baseurl, 'training') },
-    { "title": "Contact",    "url": relurljoin(CONFIG.baseurl, 'contact.html') }
+    { "title": "Contact",    "url": relurljoin(CONFIG.baseurl, 'contact') }
 ]
 
 CONFIG.data.about.paragraphs                = [

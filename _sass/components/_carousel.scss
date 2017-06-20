@@ -19,3 +19,9 @@
     border-radius: $carousel-card-btn-border-radius !important;
   }
 }
+
+.full-screen {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
